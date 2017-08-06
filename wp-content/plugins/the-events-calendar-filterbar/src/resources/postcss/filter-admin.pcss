@@ -1,0 +1,55 @@
+#tribe-field-events_filters_layout {
+	clear: both;
+	display: block;
+}
+
+.tribe-arrangeable-item .ui-state-default {
+	position: relative;
+}
+
+.active-sort {
+	display: inline-block;
+	width: 10px;
+}
+
+.active-sort:before,
+.active-sort:after {
+	border: 4px solid transparent;
+	content: "";
+	display: block;
+	height: 0;
+	left: 5px;
+	position: absolute;
+	top: 50%;
+	width: 0;
+}
+
+.active-sort:before {
+	border-bottom-color: #23282d;
+	margin-top: -9px;
+}
+
+.active-sort:after {
+	border-top-color: #23282d;
+	margin-top: 1px;
+}
+
+.tribe-arrangeable-action:before {
+	border-bottom: 0 inset transparent;
+	border-left: 4px inset transparent;
+	border-right: 4px inset transparent;
+	border-top: 6px solid;
+	content: ' ';
+	height: 0;
+	margin: -5px 0 0 -5px;
+	pointer-events: none;
+	position: absolute;
+	width: 0;
+}
+
+.tribe-arrangeable-action.open:before {
+	border-bottom: 6px solid;
+	border-left: 4px inset transparent;
+	border-right: 4px inset transparent;
+	border-top: 0 inset transparent;
+}
