@@ -95,10 +95,9 @@
         	//console.log(coordenadas,'coordenadas');
 		    var poligono = new google.maps.Polygon({
 		        paths: coordenadas,
-		        strokeColor: color,
 		        strokeOpacity: 0.5,
-		        strokeWeight: 2,
-		        fillColor: color,
+		        strokeWeight: 1,
+		        fillColor: 'white',
 		        fillOpacity: 0.2,
 		        geodesic: true
 
@@ -114,10 +113,10 @@
 		    });
 
 		    google.maps.event.addListener(poligono, "mousemove", function(event) {
-		        poligono.setOptions({fillColor: '#002656'}); 
+		        poligono.setOptions({fillColor: 'white',fillOpacity: 0.5}); 
 		    });
 		    google.maps.event.addListener(poligono, "mouseout", function(event) {
-		        poligono.setOptions({fillColor: color});
+		        poligono.setOptions({fillColor: 'white',fillOpacity: 0.2});
 		    });
 		    // poligono.addListener('mouseover', function (event) {
 		    // 	poligono.setOptions('fillColor','#a3ccff');
@@ -3631,7 +3630,7 @@
 		    "elementType": "geometry.stroke",
 		    "stylers": [
 		      {
-		        "color": "#3596bf"
+		        "color": "rgba(255,255,255)"
 		      },
 		      {
 		        "weight": 1.5
