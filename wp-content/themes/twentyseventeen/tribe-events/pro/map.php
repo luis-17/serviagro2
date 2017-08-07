@@ -24,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 <!-- Main Events Content -->
 <div class="col-xs-12">
-	<?php tribe_get_template_part( 'pro/map/content' ) ?>
+	<?php //tribe_get_template_part( 'pro/map/content' ) ?>
 </div>
 
 <div class="tribe-clear"></div>

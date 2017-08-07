@@ -19,7 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) { die( '-1' ); }
 
 do_action( 'tribe_events_filter_view_before_template' );
 ?>
-<div id="tribe_events_filters_wrapper" class="tribe-events-filters-horizontal tribe-clearfix">
+<div id="tribe_events_filters_wrapper" class="tribe-events-filters-horizontal tribe-clearfix col-md-12">
 	<?php do_action( 'tribe_events_filter_view_before_filters' ); ?>
 	<div class="tribe-events-filters-content tribe-clearfix">
 		<label class="tribe-events-filters-label"><?php esc_html_e(  'Narrow Your Results', 'tribe-events-filter-view' ); ?></label>
@@ -44,6 +44,15 @@ do_action( 'tribe_events_filter_view_before_template' );
 
 	<?php do_action( 'tribe_events_filter_view_after_filters' ); ?>
 
+</div>
+<!-- Google Map Container -->
+<div class="inline-block col-md-7" style="">
+	<?php tribe_get_template_part( 'pro/map/gmap-container' ) ?>
+	<div class="tribe-clear"></div>
+</div>
+<div class="inline-block col-md-5 lista-eventos" style="">
+	<?php tribe_get_template_part( 'list/content' ); ?>
+	<div class="tribe-clear"></div>
 </div>
 
 <?php

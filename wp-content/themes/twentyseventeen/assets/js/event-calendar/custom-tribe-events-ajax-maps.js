@@ -95,6 +95,7 @@
         	//console.log(coordenadas,'coordenadas');
 		    var poligono = new google.maps.Polygon({
 		        paths: coordenadas,
+		        strokeColor: 'black',
 		        strokeOpacity: 0.5,
 		        strokeWeight: 1,
 		        fillColor: 'white',
